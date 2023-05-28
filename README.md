@@ -46,11 +46,11 @@
       - Rotate the marker that tells the direction of the jump
     - Frigates
       - Move 1 step forward or to the sides (no backward movement)
-      - Can attack forward left and right (like a pawn)
+      - Can attack front, left, right
       - Once on a gate can choose to activate/inactivate it (Replace the pieces accordingly)
       - Gate jump:
-        - Jump to the next or previous gate (only 1 step)
-        - In case target gate is inactive it will be replaced with an active one
+        - Jump to the next or previous active gate (only 1 step)
+        - If target gate is inactive no jump will be performed
       - Gate strike:
         - The unit is on an active gate
         - A unit on a gate can attack on the upper/lower active gate on this possitions: x G x
