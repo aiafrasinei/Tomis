@@ -1,4 +1,4 @@
-# Robase
+# Tomis
 
 ## Description
 
@@ -16,7 +16,7 @@
     - 2 tower (bishops)
     - 1 flagship (queen)
   
-## Scope
+## Scope/Story
 
     Two fleet commanders fight a space battle
     Use the available structures and ships to defeat the enemy
@@ -31,11 +31,45 @@
       - One per row, one per turn, start from back row
       - At least one step away from the base
     - Frigates, sentries, towers, flagship
-      - To the left and right of the base
+      - Can be placed anywhere on the back row
       - Cannot be placed directly on a gate
     - Flagship
       - Only available after any piece arrives on the back row of the enemy
+
+## Attacks
+
+    Attack point = ap
+
+    AttackPoints:
+      - Base has no attack points
+      - Frigate,Sentries,Towers ( 1 ap )
+      - Flagship ( 2 ap )
+
+    Attack effects:
+      - A stalemate is when the attacker and defender have the same aps ( no effects ) 
+      - An attack will be sucessfull if number of ap is larger then the target
+      - After a succesfull attack a piece is removed from the board  
+    
+    Frigate attacks ( 1 step ):
+
+      \ | /
+        #
+
+    Sentry attacks:
+
+       \ /
+        #
+       / \
+
+    Tower attacks:
+        |
+      - # -
+        |
   
+    Attack examples:
+      - 1 frigate vs 1 frigate => stalemate (cannot destroy each other)
+      - 2 frigates vs 1 frigate => succesfull attack (2ap vs 1p)
+
 ## Actions
 
     - Base
@@ -44,12 +78,16 @@
     - Jump Gate
       - The default jump range is 2 (horizontal,vertical or diagonal movement)
       - Rotate the marker that tells the direction of the jump
+      - On a jump where the target is a jump gate, you need 2 ap to destroy the jump gate
     - Frigates
       - Move 1 step forward or to the sides (no backward movement)
       - Can attack front, left, right
+      - Each frigate has one attack point
+      - To take a piece you need two attack points
       - Once on a gate can choose to activate/inactivate it (Replace the pieces accordingly)
       - Gate jump:
         - Jump to the next or previous active gate (only 1 step)
+        - If target gate has an enemy frigate you need 2 attacks points to capture it by gate jump
         - If target gate is inactive no jump will be performed
       - Gate strike:
         - The unit is on an active gate
@@ -67,7 +105,7 @@
       - Tower like movement
     - Flagship
       - Queen like movement
-  
+
 ## Win condition
 
     - Game is won when the enemy base is destroyed
