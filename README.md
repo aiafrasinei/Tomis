@@ -22,8 +22,8 @@
 ## Initial placement
 
     Base
-        The white side starts first by placing the base on their back row.
-        Next the black side places their base.
+        The white player starts first by placing the base on their back row.
+        Next the black player places their base.
         The base can be placed anywhere on the back row.
     Gates
         The inactive gates are placed first.
@@ -31,8 +31,8 @@
         Gates must be positioned at least one step away from the base.
         Only one gate can exist per row.
     Frigates, Sentries, Towers, Flagship
-        These pieces can be placed anywhere on the back row.
-        They cannot be placed directly on a gate.
+        These pieces can be placed anywhere on the back row,
+        except directly on a gate.
     Flagship
         The flagship is only available after a frigate arrives on the back row of the enemy.
 
@@ -43,8 +43,7 @@
     AttackPoints:
 
     The base has no attack points.
-    Frigates, Sentries, Towers (1 AP).
-    Flagship (2 AP).
+    Frigates, Sentries, Towers, Flagship (1 AP).
 
     Attack effects:
     
@@ -101,7 +100,7 @@
             The frigate will move 2 steps in the direction of the marker.
             A jump will not be performed if any of the passing rows have no gate.
             Modifying the direction of the marker takes one turn.
-            If the frigate passes 2 or more consecutive jump gates, it will jump 3 steps.
+            If the gate has 2 markers the piece will jump 3 steps.
     Sentries
         Move similar to a bishop in chess.
     Towers
