@@ -58,7 +58,9 @@ A standard chess board (8x8).
 
 ### The battle environment
 
-A maximum of three pawns can be placed on top of each other anywhere on the board.
+A maximum of three pawns can be placed on top of each other anywhere on the board,
+
+strictly in order of size from bottom to top: Large, Medium, Small
 
 Think of the environment as three boards stacked on top of each other.
 
@@ -89,7 +91,7 @@ This is extended for Tomis by using the following syntax to identify the stacked
 
 Examples:
 
-![Early game notation](imgs/TomisBoard400PawnsEarlyGame.png)
+![Early game notation](imgs/Board400PawnsEarlyGame.png)
 
 * Notation:
 
@@ -107,13 +109,13 @@ Board 1 uses the large pawns, board 2 uses the medium pawns, and board 3 uses th
 
 Examples:
 
-![Pawns not stacked](imgs/TomisBoard400Pawns.png)
+![Pawns not stacked](imgs/Board400Pawns.png)
 
 * Notation:
 
 1. d2_2 2. c3_2 3. h7_1 4. g2_1 5. b5_3 6.c6_3
 
-![Stacked Pawns](imgs/TomisBoard400PawnsStacked.png)
+![Stacked Pawns](imgs/Board400PawnsStacked.png)
 
 * Notation:
 
@@ -137,7 +139,7 @@ b2 c2 d2 d3 d4 b4 c4 b3
 
 The attack will happen on these adjacent tiles on the same board.
 
-![Pawn Attacks](imgs/TomisPawnAttack.png)
+![Pawn Attacks](imgs/PawnAttack.png)
 
 More details in the rules of linking, defending, attacking, stacking sections. 
 
@@ -167,7 +169,7 @@ Each player decides at the beginning where their king will be located and keeps 
 
 The chosen location can be anywhere on the 3 boards, use the game notation.
 
-Each player will write the position on a piece of paper.
+Each player will write the position on a piece of paper or electronic means.
 
 When a player places a pawn on the king's position, the king will be revealed.
 
@@ -181,7 +183,7 @@ In the unlikely event of both players choosing the same king location:
 
 Example:
 
-![Revealed Kings](imgs/TomisBoard400Kings.png)
+![Revealed Kings](imgs/Board400Kings.png)
 
 Both kings are revealed.
 
@@ -205,7 +207,7 @@ There are 2 types of linking:
 
   A pawn will share an attack point to any diagonal friendly pawn.
 
-  ![Rules of linking attack](imgs/TomisLinkingAttack.png)
+  ![Rules of linking attack](imgs/LinkingAttack.png)
 
   Notation:
 
@@ -225,7 +227,7 @@ There are 2 types of linking:
   
   A pawn will share a defense point to any friendly pawns placed on the horizontal, vertical positions.
 
-  ![Rules of linking defense](imgs/TomisLinkingDefense.png)
+  ![Rules of linking defense](imgs/LinkingDefense.png)
 
   Notation:
 
@@ -255,7 +257,7 @@ c3_1 and d3_1 pawns both have 2 defense points.
 
 Examples:
 
-![Rules of defending 1](imgs/TomisRulesOfDefending1.png)
+![Rules of defending 1](imgs/RulesOfDefending1.png)
 
 * Case 1
 
@@ -278,7 +280,7 @@ Examples:
   d2_1 -> d3_1 : failed attack (1 vs 2)
 
 
-![Rules of defending 2](imgs/TomisRulesOfDefending2.png)
+![Rules of defending 2](imgs/RulesOfDefending2.png)
 
 * Case 1
 
@@ -325,7 +327,7 @@ If you make a mistake and make an unsuccessful attack, the turn will change.
 
 Examples:
 
-![Rules of attacking 1](imgs/TomisRulesOfAttacking1.png)
+![Rules of attacking 1](imgs/RulesOfAttacking1.png)
 
 * Case 1
 
@@ -350,7 +352,7 @@ Examples:
 
   d3_1 -> d2_1 : successful attack (2 vs 1)
 
-![Rules of attacking 2](imgs/TomisRulesOfAttacking2.png)
+![Rules of attacking 2](imgs/RulesOfAttacking2.png)
 
 * Case 1
 
@@ -385,7 +387,7 @@ The counter is to place a piece on the upper level.
 
 In this case the ambush will fail and the +1 bonus doesnt apply anymore.
 
-![Ambush example](imgs/TomisAmbushExample.png)
+![Ambush example](imgs/AmbushExample.png)
 
 * Case 1
 
@@ -409,7 +411,7 @@ Be carefull with this, the number of defense points could be higher and it will 
 
 Example:
 
-![Stacks](imgs/TomisBoard400Stacks.png)
+![Stacks](imgs/Board400Stacks.png)
 
 * Notation
 1. f4_1 2. e5_1 3. f4_2 4. e5_2 5. f4_3 6. e5_3
@@ -430,7 +432,7 @@ The game will be over if an attack is successful on a king (king is captured).
 
 Example:
 
-![Stacks](imgs/TomisBoardEndgame.png)
+![Stacks](imgs/BoardEndgame.png)
 
 * Notation
 
